@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-rm^%--stz)t_%^ihyqokbv+12^z2&4e#x97w6lcnxt91!@ek@$
 DEBUG = False
 # IT WILL CONTAIN ALL THE URLS OF THE ALLOWED HOSTS 
 # FOR E.G IF WE DEPLOY THE WEBSITE ON HEROKU AND GET THE DOMAIN , WE WILL INSERT IT HERE
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['expomeet.herokuapp.com']
 
 NUMB_TURN_CREDENTIAL = config('NUMB_TURN_CREDENTIAL', default=None)
 NUMB_TURN_USERNAME = config('NUMB_TURN_USERNAME', default=None)
