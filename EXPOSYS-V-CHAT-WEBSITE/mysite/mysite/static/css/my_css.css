@@ -1,0 +1,114 @@
+/* CSS FOR THE CHATTING WEBSITE */
+.body{
+    background-color: green;
+}
+.video-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+} 
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 60% 20%;
+} 
+ 
+video {
+    border-radius: 25%;
+    background-color: black;
+} 
+#label-username {
+    border-radius: 16px;
+    border: 3px solid black;
+    display: block;
+    width: 20%;
+    font-size: 20px;
+    padding: 7px;
+    color: white;
+    background: #7640d3;
+}
+#username{
+    border-radius: 16px;
+    border: 3px solid black;
+    display: block;
+    width: 30%;
+    font-size: 20px;
+    padding: 7px;
+    background: #eaead8;
+}
+#local-video{
+    padding: 30px 20px;
+    margin: 60px 24px;
+}
+body{
+    background-color: rgb(193, 206, 231);
+}
+body{
+    background-image: url("https://images.pexels.com/photos/3367931/pexels-photo-3367931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+#chat{
+    border-radius: 5%;
+    background-color: rgb(163, 163, 163);
+    position: right;
+    position: absolute;
+    right: 29px;
+    width: 400px;
+    height: auto;
+    border: 5px solid black;
+    top: 100px;
+}
+#chat h3{
+    background-color: #7640d3;
+    font-size: 29px;
+    padding: 2px 22%;
+    color: white
+}
+
+li{
+    background-color: #8207fb;
+    font-size: 27px;
+    border-radius: 16px;
+    padding: 3px 22px;
+    margin: 14px 5px;
+    color: white;
+}
+#heading h2{
+    border: 4px solid white; 
+    background-color:#7640d3;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 40%;
+    font-size: 29px;
+    text-decoration-line: underline;
+}
+#btn-join{
+    margin: 2px 3px;
+}
+#msg{
+    margin: 3px 3px;
+    padding: 2px 51px;
+    font-size: 20px;
+}
+#ct{
+    background-color: rgb(163, 163, 163);;
+}
+#btn-toggle-audio{
+    position: absolute;
+    border: 3px solid black;
+    top: 33%;
+    left: 17%;
+}
+#btn-toggle-video{
+    position: absolute;
+    border: 3px solid black;
+    top: 33%;
+    left: 22%;
+}
+#btn-join{
+    margin: 6px 20px;
+    padding: 1px 8px;
+    background-color: rgb(53, 249, 57);
+    border-radius: 19px;
+}
