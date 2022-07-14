@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<title>EXPOSYS PROJECT</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'E:/trial_project/EXPOSYS-V-CHAT-WEBSITE/mysite/static/css/my_css.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	
+</head>
+<body>
+	<div id = "heading">
+		<h2>EXPOSYS MEET</h2>
+	</div>
+	<h3 id="label-username">Enter your username below..</h3>
+	<div>
+		<input id="username"><button id="btn-join" style="font-size:24px">Join Meet <i class="fa fa-group"></i></button>
+
+	</div>
+	<div class="main-grid-container">
+		<div id="video-container">
+			<div><video id="local-video" style="float: left;" size = "screen" autoplay playsinline></video></div>
+			<button id="btn-toggle-audio" class="btn btn-dark"><i class="fa fa-microphone" style="font-size:30px" aria-hidden="true"></i></button>
+			<button id="btn-toggle-video" class="btn btn-dark"><i class="fa fa-video-camera" style="font-size:30px"></i></button>
+		</div>
+		<div id="chat">
+			<h3> CHAT WINDOW </h3>
+			<div id="messages">
+				<ul id="message-list"></ul>
+			</div>
+			<div id="ct"><input id="msg"><button id="btn-send-msg">
+				<i style="font-size:24px" class="fa">&#xf1d9;</i>
+			</button></div>
+	</div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
