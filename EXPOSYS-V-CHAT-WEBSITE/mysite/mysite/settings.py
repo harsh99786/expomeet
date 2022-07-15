@@ -24,13 +24,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '***************************'
+SECRET_KEY = '**************'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 # IT WILL CONTAIN ALL THE URLS OF THE ALLOWED HOSTS 
 # FOR E.G IF WE DEPLOY THE WEBSITE ON HEROKU AND GET THE DOMAIN , WE WILL INSERT IT HERE
-ALLOWED_HOSTS = ['expomeet.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 NUMB_TURN_CREDENTIAL = config('NUMB_TURN_CREDENTIAL', default=None)
 NUMB_TURN_USERNAME = config('NUMB_TURN_USERNAME', default=None)
@@ -49,7 +49,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -126,8 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+
 # CHANNELS
 ASGI_APPLICATION = 'mysite.asgi.application'
 

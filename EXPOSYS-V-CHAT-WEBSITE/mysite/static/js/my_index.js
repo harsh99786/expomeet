@@ -1,4 +1,4 @@
-var mapPeers = {};//USED FOR MAPPING PEER USERNAMES BY KEY-VALUE PAIRS
+var mapPeers = {};//USED FOR MAPPING PEER USERNAMES BY KEY-VALUE PAIRS the js file
 var mapScreenPeers = {};//SCREEN STREAMING
 var screenShared = false;//CHECK WHETHER SCREEN IS SHARED OR NOT
 const localVideo = document.querySelector('#local-video');
